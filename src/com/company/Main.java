@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
@@ -13,7 +14,16 @@ public class Main {
         numbers.add(78);
         numbers.add(100);
 
-        System.out.print("The searching object is in 'numbers' array,and the objects index is ");
-        System.out.println(numbers.indexOf(78) + ".");
+        System.out.println("This 'numbers' array before sorted.");
+        for (int number : numbers) {
+            System.out.print(number + " ,");
+        }
+
+        System.out.println();
+        System.out.println("And this is 'numbers' array after sorted.");
+        for (int i = 0; i < numbers.size(); i++) {
+            Collections.sort(numbers);
+        }
+        System.out.println(numbers);
     }
 }
