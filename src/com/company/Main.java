@@ -19,9 +19,9 @@ public class Main {
         }
         System.out.println();
 
-        System.out.println("This is 'copyWeekDays' array,it is 'weekDays' array clone.");
-        ArrayList<String> copyWeekDays = new ArrayList<>(weekDays);
-        System.out.println(copyWeekDays);
+        System.out.println("This is 'months' array after clear,it is empty");
+        weekDays.clear();
+        System.out.println(weekDays);
     }
 }
 
