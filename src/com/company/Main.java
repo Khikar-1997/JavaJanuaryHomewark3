@@ -10,7 +10,7 @@ public class Main {
         colors.add(" Green");
         colors.add(" Yellow");
         colors.add(" Black");
-        colors.add(" Orange");
+        colors.add(" White");
         for (int i = 0; i < colors.size(); i++) {
             System.out.println(colors.iterator());
         }
