@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Main {
 
@@ -14,14 +13,32 @@ public class Main {
         months.add("Jule");
         months.add("August");
         months.add("September");
-        System.out.println("This is 'months' array before elemenths swaping");
+        System.out.println("This is 'months' array");
         for (String month : months) {
             System.out.print(month + " ,");
         }
         System.out.println();
-        Collections.swap(months,0,2);
-        System.out.println("This is 'months' array after elemenths swaping");
-        System.out.println(months);
+        ArrayList<String> weekDays = new ArrayList<>();
+        weekDays.add("Monday");
+        weekDays.add("Tuesday");
+        weekDays.add("Wednesday");
+        weekDays.add("Thursday");
+        weekDays.add("Friday");
+        weekDays.add("Saturday");
+        weekDays.add("Sunday");
+        System.out.println("This is 'weekDays' array");
+        for (String weekDay : weekDays) {
+            System.out.print(weekDay + " ,");
+        }
+        System.out.println();
+
+        weekDays.addAll(months);
+        System.out.println("This is 'weekDays' array merge with 'months' array");
+        for (String weekDay : weekDays) {
+            System.out.print(weekDay + " ,");
+        }
+
+
     }
 }
 
