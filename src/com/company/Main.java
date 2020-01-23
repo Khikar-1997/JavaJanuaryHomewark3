@@ -37,8 +37,6 @@ public class Main {
         for (String weekDay : weekDays) {
             System.out.print(weekDay + " ,");
         }
-
-
     }
 }
 
