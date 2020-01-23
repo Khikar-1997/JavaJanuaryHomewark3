@@ -20,10 +20,9 @@ public class Main {
         }
 
         System.out.println();
+        Collections.sort(numbers);
+
         System.out.println("And this is 'numbers' array after sorted.");
-        for (int i = 0; i < numbers.size(); i++) {
-            Collections.sort(numbers);
-        }
         System.out.println(numbers);
     }
 }
