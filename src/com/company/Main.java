@@ -22,6 +22,11 @@ public class Main {
         System.out.println("This is 'months' array after clear,it is empty");
         weekDays.clear();
         System.out.println(weekDays);
+        if (weekDays.size() == 0) {
+            System.out.println("It is empty");
+        } else {
+            System.out.println("'weekDays' arrays length is " + weekDays.size());
+        }
     }
 }
 
