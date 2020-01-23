@@ -1,26 +1,19 @@
 package com.company;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
-        LinkedList<String> colors = new LinkedList<>();
-        colors.add("Red");
-        colors.add("Green");
-        colors.add("Yellow");
-        colors.add("Black");
-        colors.add("White");
+        ArrayList<Integer> numbers = new ArrayList<>();
 
-        for (String s : colors) {
-            System.out.println(s);
-        }
-        System.out.println();
+        numbers.add(34);
+        numbers.add(28);
+        numbers.add(1);
+        numbers.add(78);
+        numbers.add(100);
 
-        colors.remove(2);
-
-        for (String color : colors) {
-            System.out.println(color);
-        }
+        System.out.print("The searching object is in 'numbers' array,and the objects index is ");
+        System.out.println(numbers.indexOf(78) + ".");
     }
 }
