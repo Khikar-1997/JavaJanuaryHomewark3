@@ -14,16 +14,16 @@ public class Main {
         numbers.add(78);
         numbers.add(100);
 
-        System.out.println("This 'numbers' array before sorted.");
+        System.out.println("This 'numbers' array");
         for (int number : numbers) {
             System.out.print(number + " ,");
         }
 
         System.out.println();
-        System.out.println("And this is 'numbers' array after sorted.");
-        for (int i = 0; i < numbers.size(); i++) {
-            Collections.sort(numbers);
+        ArrayList<Integer> copyNumbers = new ArrayList<>(numbers);
+        System.out.println("And this is'copyNumbers' array,it is copy of 'numbers' array");
+        for (Integer copyNumber : copyNumbers) {
+            System.out.print(copyNumber + " ,");
         }
-        System.out.println(numbers);
     }
 }
